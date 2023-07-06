@@ -1,0 +1,397 @@
+/*--- page ---*/
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #ffffff;
+
+}
+
+/*--- navigation bar ---*/
+
+.navbar {
+    background: #343434;
+}
+
+.nav-link {
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.navbar-brand {
+    color: white !important;
+    cursor: pointer;
+
+}
+
+.nav-link {
+    margin-right: 1em !important;
+}
+
+.nav-link:hover {
+    color: white;
+    border-radius: 6px;
+    background-color: #4b4b4b;
+}
+
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.logout {
+    border: white;
+    background-color: #343434;
+    color: white;
+    padding: 8px;
+    margin-right: 16px;
+    padding: 8px;
+}
+
+.logout:hover {
+    color: white;
+    border-radius: 6px;
+    background-color: #4b4b4b;
+}
+
+.dropdown-item:hover {
+    background-color: #4b4b4b !important;
+
+}
+
+/*--- feature section ---*/
+.center {
+    justify-content: center;
+}
+
+.box {
+    margin-top: 60px;
+    box-shadow: 5px 5px 5px 5px #898A89;
+    border-radius: 6px;
+    padding-bottom: 25px;
+    background-color: rgba(225, 225, 225, 0.7);
+}
+
+.features {
+    margin: 4em auto;
+    padding: 1em;
+    position: relative;
+}
+
+.feature-title {
+    color: #333;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.features .loginInfo {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 75%;
+}
+
+.btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.page-footer {
+    background-color: #222;
+    color: #ccc;
+    padding-top: 35px;
+}
+
+.footer-copyright {
+    color: #666;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+/*---  patient report ---*/
+.datacard {
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+    border-radius: 6px !important;
+    border-style: solid;
+}
+
+.dataCard-header {
+    background-color: #343a40 !important;
+    color: white !important;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.dataCard-body {
+    padding: 10px;
+}
+
+/*---  bg image ---*/
+/*.img-bg {*/
+/*    height: 50%;*/
+/*    width: 50%;*/
+/*    display: block;*/
+/*    margin-left: auto;*/
+/*    margin-right: auto;*/
+/*}*/
+
+/*---  record del btn ---*/
+.recordDel {
+    background-color: #007bff;
+    border: none !important;
+    color: #fdfdfd;
+    margin-top: 20px;
+    width: 125px;
+    display: block;
+    margin-left: auto;
+    border-radius: 4px;
+
+}
+
+.recordDel:hover {
+    background-color: #006ae0;
+
+}
+
+/*Index page cards*/
+.main-container {
+    padding: 30px;
+}
+
+/* HEADING */
+
+.heading {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.heading__title {
+    font-weight: 600;
+}
+
+.heading__credits {
+    margin: 10px 0px 70px 0px;
+    color: #656565;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+/* CARDS */
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin: 20px;
+    padding: 20px;
+    width: 500px;
+    min-height: 200px;
+    display: grid;
+    grid-template-rows: 20px 50px 1fr 50px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s;
+}
+
+.card:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.01);
+}
+
+.card__link {
+    position: relative;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.card__link::after {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: all 0.5s;
+}
+
+.card__link:hover::after {
+    width: 100%;
+
+}
+
+
+.card__title {
+    grid-row: 3/4;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.card__apply {
+    grid-row: 4/5;
+    align-self: center;
+}
+
+/* CARD BACKGROUNDS */
+
+.card-1 {
+    background: radial-gradient(#1fe4f5, #3fbafe);
+}
+
+.card-2 {
+    background: radial-gradient(#fbc1cc, #fa99b2);
+}
+
+.card-3 {
+    background: radial-gradient(#76b2fe, #b69efe);
+}
+
+.card-4 {
+    background: radial-gradient(#60efbc, #58d5c9);
+}
+
+.card-5 {
+    background: radial-gradient(#f588d8, #c0a3e5);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1600px) {
+    .cards {
+        justify-content: center;
+    }
+}
+
+.img-bg {
+
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    opacity: 0.7;
+    border-radius: 133px
+}
+.heart {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+
+    opacity: 0.7;
+    border-radius: 133px;
+    animation: pulse 2s infinite ease-in-out;
+}
+@keyframes pulse {
+    0% {
+        width: 30%;
+    }
+    50% {
+        width: 32%;
+    }
+    100% {
+        width: 30%;
+    }
+}
+.heart-box{
+
+    height: 350px;
+}
+@media (max-width: 992px) {
+    .heart-box {
+        height: 220px;
+    }
+}
+@media (max-width: 463px) {
+    .heart-box {
+        height: 156px !important;
+    }
+}
+@media (max-width: 341px) {
+    .heart {
+        padding-top: 8%;
+    }
+}
+@media (max-width: 768px) {
+    .heart {
+        padding-top: 4%;
+    }
+}
+/* site back */
+.bg {
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.CardBgCol {
+    background-color: rgba(225, 225, 225, 0.7);
+    border-radius: 30px;
+}
+
+.numCard {
+    width: 300px;
+    background-image: linear-gradient(to bottom right, #1344db, #03ece6);
+    padding: 30px;
+    border-radius: 44px;
+    margin: 20px auto 20px auto;
+
+}
+
+.numCard .h1 {
+    margin: auto;
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.numCard .h5 {
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.cardTitle {
+    text-align: center;
+    margin: 30px 0px 30px 0px;
+}
+
+.aboutUs {
+    padding: 0 40px 0 40px;
+    color: #656565;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+/* index map */
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    margin: 20px 0px 20px 0px;
+    border-radius: 10px;
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
